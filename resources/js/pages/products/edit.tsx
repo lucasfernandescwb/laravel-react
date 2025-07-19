@@ -4,10 +4,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import AppLayout from "@/layouts/app-layout";
-import { BreadcrumbItem, PageProps, Product } from "@/types";
-import { Head, Link, useForm, usePage } from "@inertiajs/react";
-import { CircleAlert, Terminal } from "lucide-react";
-import { ReactFormState } from "react-dom/client";
+import { Product } from "@/types";
+import { Head, useForm } from "@inertiajs/react";
+import { CircleAlert } from "lucide-react";
 
 interface Props {
     product: Product;

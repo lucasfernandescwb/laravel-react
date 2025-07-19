@@ -13,7 +13,7 @@ const breadcrumbs: BreadcrumbItem[] = [
     }
 ]
 
-export default function index() {
+export default function Index() {
 
     const { products, flash } = usePage().props as unknown as PageProps
 

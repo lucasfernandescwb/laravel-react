@@ -5,9 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import AppLayout from "@/layouts/app-layout";
 import { BreadcrumbItem } from "@/types";
-import { Head, Link, useForm } from "@inertiajs/react";
+import { Head, useForm } from "@inertiajs/react";
 import { CircleAlert, Terminal } from "lucide-react";
-import { ReactFormState } from "react-dom/client";
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -18,7 +17,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 
 export default function Create() {
 
-    const { data, setData, post, processing, errors } = useForm({
+    const { data, setData, post, errors } = useForm({
         name: '',
         price: '',
         description: ''
